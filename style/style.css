@@ -585,6 +585,9 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   border: 1px solid var(--pink-color);
+  margin: auto;
+  width: 85%;
+  height: 366px;
   box-shadow: 5px 10px 27px #fb3b64;
   margin-bottom: 10%;
 }
@@ -602,6 +605,9 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   border: 1px solid var(--blue-color-btn);
+  margin: auto;
+  width: 85%;
+  height: 366px;
   box-shadow: 5px 10px 27px #07ACE6;
   margin-bottom: 10%;
 }
@@ -619,6 +625,9 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   border: 1px solid var(--blue-color-btn2);
+  margin: auto;
+  width: 85%;
+  height: 366px;
   box-shadow: 5px 10px 27px #55DFB4;
   margin-bottom: 10%;
 }
