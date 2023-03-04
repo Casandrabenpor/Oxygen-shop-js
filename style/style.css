@@ -237,7 +237,7 @@ header {
     font-size: 35px;
     line-height: 41px;
     text-align: center;
-    padding-top: 22%;
+    padding-top: 15%;
   }
   .popular_vector {
     margin-top: 50px;
@@ -768,9 +768,10 @@ body {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
-    font-size: 49px;
+    font-size: 31px;
     line-height: 58px;
     color: var(--black-color);
+    text-align: center;
   }
   .contact .contact-2 {
     font-family: "Open Sans";
@@ -779,6 +780,7 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: var(--black-color);
+    text-align: center;
   }
   .contact .flex-container {
     display: flex;
@@ -902,12 +904,7 @@ body {
 
 @media screen and (max-width: 678px) {
   .arrowbutton {
-    position: relative;
-    left: 15%;
-    width: 50px;
-    top: 71%;
-    cursor: pointer;
-    right: 8%;
+    display: none;
   }
 }
 input.invalid {
