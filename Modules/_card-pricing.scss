@@ -1,0 +1,290 @@
+//Pricing
+
+// Botones eur,usd,gbp
+.pricing_eur{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 4%;
+   
+}
+#usd{
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--blue-color-btn);
+ 
+    
+}
+#eur{
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--pink-color)
+    
+}
+#gbp{
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--blue-color-btn2)
+    
+}
+@media only screen and (min-width: 1000px) {
+    #price_content {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+
+        .p_btn-beggin {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            color: #FFFF;
+        }
+
+        .basic_title {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #13253B;
+            text-align: center;
+        }
+
+        .title-dolar1 {
+            color: #FB3B64;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 46px;
+            line-height: 64px;
+            text-align: center;
+
+        }
+
+        .title-dolar2 {
+            color: #07ACE6;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 46px;
+            line-height: 64px;
+            text-align: center;
+
+        }
+
+        .title-dolar3 {
+            color: #55DFB4;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 46px;
+            line-height: 64px;
+            text-align: center;
+        }
+
+        .small {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            color: #13253B;
+            text-align: center;
+        }
+
+        .card__atr {
+            display: flex;
+            margin: 10px 0px;
+        }
+
+        .card_text {
+            margin-left: 10px;
+            margin-top: 17px;
+
+        }
+
+    }
+}
+
+
+@mixin card($bordercolor, $box-shadow) {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 4% 6% 5px;
+    border-radius: 18px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: $bordercolor;
+  
+    box-shadow: $box-shadow;
+    margin-bottom: 10%;
+    
+
+
+
+    &:hover {
+        transform: scale(1.08);
+        transition: transform 0.5s ease-in-out;
+    }
+}
+
+
+#card_price1 {
+    @include card(1px solid var(--pink-color), 5px 10px 27px #fb3b64);
+
+}
+
+#card_price2 {
+    @include card(1px solid var(--blue-color-btn), 5px 10px 27px #07ACE6);
+
+}
+
+#card_price3 {
+    @include card(1px solid var(--blue-color-btn2), 5px 10px 27px #55DFB4);
+}
+
+@mixin button($background-color) {
+    background-color: $background-color;
+    border-radius: 23px;
+    width: 51%;
+    height: 9%;
+    position: absolute;
+    top: 96%;
+    padding: 5%;
+    border: none;
+    font-size: 1rem;
+    max-width: 440px;
+    right: 27%
+}
+
+.button_beggin1 {
+    @include button(#EB476E);
+
+}
+
+.button_beggin2 {
+    @include button(#07ACE6);
+}
+
+.button_beggin3 {
+    @include button(#55DFB4);
+}
+// responsive
+
+@media screen and (max-width: 1000px) {
+
+
+    #price_content {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .features{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    .p_btn-beggin {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        color: #FFFF;
+    }
+    .title-dolar1 {
+        color: #FB3B64;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 64px;
+        text-align: center;
+
+    }
+    .title-dolar2 {
+        color: #07ACE6;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 64px;
+        text-align: center;
+
+    }
+
+    .title-dolar3 {
+        color: #55DFB4;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 64px;
+        text-align: center;
+    }
+    @mixin card($bordercolor, $box-shadow) {
+        display: flex;
+    
+        flex-direction: column;
+        padding: 4% 6% 5px;
+        border-radius: 18px;
+        box-sizing: border-box;
+        cursor: pointer;
+        border: $bordercolor;
+        width: 80%;
+        height: 339px;
+        box-shadow: $box-shadow;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    
+    
+    
+        &:hover {
+            transform: scale(1.08);
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+    @mixin button_responsive($background-color) {
+        background-color: $background-color;
+       
+
+        border-radius: 23px;
+        width: 29%;
+        height: 5%;
+        display: flex;
+        position: absolute;
+       left: 35%;
+        border: none;
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    .button_beggin1 {
+        @include button_responsive(#EB476E);
+    
+    }
+    
+    .button_beggin2 {
+        @include button_responsive(#07ACE6);
+    }
+    
+    .button_beggin3 {
+        @include button_responsive(#55DFB4);
+    }
+   
+
+}

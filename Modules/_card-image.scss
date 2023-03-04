@@ -1,0 +1,243 @@
+@use '../Modules/color';
+
+// Cards, image
+
+body {
+    overflow-x: hidden;
+}
+
+.content {
+    background: #F7F7F7;
+    // margin-top: 15%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#benefit_background {
+    background: #F7F7F7;
+    padding: 5%;
+}
+
+//Card textos
+
+@media only screen and (min-width: 1000px) {
+
+    //card Styles
+    .card-text {
+
+        text-align: left;
+        color: --var(--black-color);
+        font-family: "Open Sans";
+
+        // line-height: 22px;
+
+
+    }
+
+    .card-title {
+
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+        margin-top: 10%;
+
+    }
+
+
+}
+
+//Card 1
+.card1-img {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E8E9ED;
+    height: 25em;
+    position: relative;
+    width: 100%;
+    min-width: 30vw;
+    border-radius: 5px;
+    flex-shrink: 1;
+}
+
+.card_description {
+    padding-left: 5%;
+
+}
+
+
+.cards {
+    display: flex;
+    width: 60%;
+    flex-shrink: 1;
+}
+
+.macbook-image {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    top: 2em;
+    left: 4%;
+    z-index: 1;
+
+}
+
+.rectangle {
+    position: absolute;
+    width: 15%;
+    right: 4%;
+
+
+}
+
+//Card 2
+.card2-img {
+    background-color: var(--white-color);
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E8E9ED;
+    height: 25em;
+    width: 100%;
+    min-width: 30vw;
+    border-radius: 5px;
+    flex-shrink: 1;
+    margin-top: 5%;
+}
+
+.ellipse_iphone {
+    position: absolute;
+    width: 20%;
+    left: 3em;
+}
+
+.iphone {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    top: 1em;
+    right: 6%;
+    z-index: 1;
+}
+
+//Card 3
+
+.card3-img {
+    background: #FFFFFF;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    flex-direction: row-reverse;
+    margin-top: 2%;
+    background-color: transparent;
+    display: flex;
+    gap: 4rem;
+    margin-top: 5%;
+    border: 0;
+}
+
+.frame {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 24.5vw;
+    position: relative;
+
+}
+
+.card_description_3 {
+    padding-left: 2%;
+    background-color: var(--white-color);
+}
+
+
+
+
+
+// Media screen 
+
+@media screen and (max-width: 1000px) {
+    .card1-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        flex-shrink: 1;
+    }
+
+    .card2-img {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-shrink: 1;
+    }
+
+    .cards {
+        flex-shrink: 10;
+        width: auto;
+    }
+
+    .card_description {
+        width: 90%;
+    }
+
+    .card3-img {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: transparent;
+        align-items: center;
+    }
+
+    .frame {
+        width: 100%;
+
+
+    }
+
+    .rectangle {
+        position: absolute;
+        width: 29%;
+        right: 20%;
+
+
+    }
+
+    .ellipse_iphone {
+        position: absolute;
+        width: 35%;
+        left: 19%;
+    }
+
+}
+
+// Line
+@mixin card-line($border) {
+    width: 70%;
+    border: $border;
+    opacity: 1;
+
+}
+
+.card-line1 {
+    @include card-line(1px solid #FB3B64);
+}
+
+.card-line2 {
+    @include card-line(1px solid #08A6E4);
+}
+
+.card-line3 {
+    @include card-line(1px solid #55DFB4);
+
+}
