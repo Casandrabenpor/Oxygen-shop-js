@@ -12,13 +12,13 @@ function toggleNav() {
 }
 //Se abre el nav cuadno pulsas y se cambia al icono  cruz
 // Llamamos a la función después de pulsar el evento
-burger.addEventListener('click', function() {
+burger.addEventListener('click', function () {
     toggleNav();
 });
 
 // Scroll
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     let scrollTop = window.scrollY;
     let docHeight = document.body.scrollHeight - window.innerHeight;
     //calculamos la cantidad de desplazamiento vertical (scrollTop) y la altura del documento (docHeight)
