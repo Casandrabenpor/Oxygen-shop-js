@@ -1,61 +1,62 @@
 @use '../Modules/color';
 
 //Contact
-@media only screen and (max-width: 1000px) {
-    .contact {
-        display: flex;
-        flex-flow: column;
 
-        .contact-container {
-            min-width: 50%;
-        }
+.contact {
+    display: flex;
+    flex-flow: column;
 
-        .contact-1 {
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 31px;
-            line-height: 58px;
-            color: var(--black-color);
-            text-align: center;
-        }
-
-        .contact-2 {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 22px;
-            color: var(--black-color);
-            text-align: center;
-        }
-
-        .flex-container {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 38px;
-            margin-left: 32px;
-        }
-
-        .p_email {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-            color: #A5A5A5;
-        }
+    .contact-container {
+        min-width: 50%;
     }
 
+    .contact-1 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 58px;
+        color: var(--black-color);
+
+    }
+
+    .contact-2 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--black-color);
+
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 38px;
+        margin-right: 8px;
+    }
+
+    .p_email {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #A5A5A5;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
+
     .contact {
         display: flex;
         gap: 5em;
         flex-direction: row;
         justify-content: center;
+
     }
+
 
     #form-contact {
         display: flex;
@@ -72,6 +73,15 @@
     .checkbox-container {
         margin-left: -9%;
         margin-bottom: -8%;
+    }
+
+    .contact-name {
+        padding-top: 11%;
+    }
+
+    .btn-submit {
+        width: 200px;
+        height: 40px;
     }
 }
 
@@ -169,7 +179,7 @@
 @media screen and (max-width:678px) {
 
     .arrowbutton {
-       
+
         display: none;
     }
 }
@@ -177,61 +187,67 @@
 //Validar name
 
 
-   
-    input.invalid {
-    
+
+input.invalid {
+
     border-color: #FF0000;
-    }
-    // input.valid{
-    //     border-color: rgb(0, 0, 0);
-        
-    // }
-    input:focus, textarea:focus{
+}
+
+// input.valid{
+//     border-color: rgb(0, 0, 0);
+
+// }
+input:focus,
+textarea:focus {
     background-color: lightyellow;
-    }
-    input submit {
+}
+
+input submit {
     font-size: 12pt;
-    }
-    .rq {
+}
+
+.rq {
     color: #FF0000;
     font-size: 10pt;
-    }
-    
+}
+
 
 // Validar formulario
 input.mail {
-  
 
- 
+
+
     border: 1px solid #333;
     margin: 0;
-  
+
     font-family: inherit;
     font-size: 90%;
-  
+
     box-sizing: border-box;
-  }
+}
+
 // Este es nuestro diseño para los campos no válidos 
-input.invalid{
+input.invalid {
     border-color: #900;
     background-color: #FDD;
-  }
-  
-  input:focus.invalid {
+}
+
+input:focus.invalid {
     outline: none;
-  }
-  // Este es el diseño para nuestros mensajes de error */
-  .error {
-    width : 100%;
+}
+
+// Este es el diseño para nuestros mensajes de error */
+.error {
+    width: 100%;
     padding: 0;
-  
+
     font-size: 80%;
     color: white;
     background-color: #900;
     border-radius: 0 0 5px 5px;
     box-sizing: border-box;
-  }
-  
-  .error.active {
+}
+
+.error.active {
     padding: 0.3em;
-  }
+}

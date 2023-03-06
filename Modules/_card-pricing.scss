@@ -1,38 +1,40 @@
 //Pricing
 
 // Botones eur,usd,gbp
-.pricing_eur{
+.pricing_eur {
     display: flex;
     justify-content: center;
     gap: 25px;
     margin-bottom: 4%;
-   
+
 }
-#usd{
+
+#usd {
     cursor: pointer;
     width: 30px;
     height: 40px;
     border-radius: 10px;
     border: 1px solid var(--blue-color-btn);
- 
-    
+
+
 }
-#eur{
+
+#eur {
     cursor: pointer;
     width: 30px;
     height: 40px;
     border-radius: 10px;
     border: 1px solid var(--pink-color)
-    
 }
-#gbp{
+
+#gbp {
     cursor: pointer;
     width: 30px;
     height: 40px;
     border-radius: 10px;
     border: 1px solid var(--blue-color-btn2)
-    
 }
+
 @media only screen and (min-width: 1000px) {
     #price_content {
         display: flex;
@@ -103,7 +105,7 @@
         .card__atr {
             display: flex;
             // margin: 10px 0px;
-            
+
         }
 
         .card_text {
@@ -120,15 +122,15 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    padding: 4% 6% 5px;
+    padding: 4% 6% 20px;
     border-radius: 18px;
     box-sizing: border-box;
     cursor: pointer;
     border: $bordercolor;
-  
+
     box-shadow: $box-shadow;
     margin-bottom: 10%;
-    
+
 
 
 
@@ -157,7 +159,7 @@
     background-color: $background-color;
     border-radius: 23px;
     width: 51%;
-    height: 9%;
+    height: 11%;
     position: absolute;
     top: 96%;
     padding: 5%;
@@ -179,6 +181,7 @@
 .button_beggin3 {
     @include button(#55DFB4);
 }
+
 // responsive
 
 @media screen and (max-width: 1000px) {
@@ -189,14 +192,15 @@
         flex-direction: column;
         width: 95%;
     }
-    .features{
+
+    .features {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        
+
     }
-    
+
     .p_btn-beggin {
         font-family: 'Open Sans';
         font-style: normal;
@@ -205,6 +209,7 @@
         line-height: 18px;
         color: #FFFF;
     }
+
     .title-dolar1 {
         color: #FB3B64;
         font-family: 'Open Sans';
@@ -215,6 +220,7 @@
         text-align: center;
 
     }
+
     .title-dolar2 {
         color: #07ACE6;
         font-family: 'Open Sans';
@@ -235,9 +241,10 @@
         line-height: 64px;
         text-align: center;
     }
+
     @mixin card($bordercolor, $box-shadow) {
         display: flex;
-    
+
         flex-direction: column;
         padding: 4% 6% 5px;
         border-radius: 18px;
@@ -249,43 +256,42 @@
         box-shadow: $box-shadow;
         margin-bottom: 10%;
         margin-top: 10%;
-    
-    
-    
+
+
+
         &:hover {
             transform: scale(1.08);
             transition: transform 0.5s ease-in-out;
         }
     }
+
     @mixin button_responsive($background-color) {
         background-color: $background-color;
-       
+
 
         border-radius: 23px;
         width: 29%;
         height: 5%;
         display: flex;
         position: absolute;
-       left: 35%;
-        border: none;
-        font-size: 1rem;
+        left: 35%;
         justify-content: center;
         align-items: center;
-       
+
     }
-    
+
     .button_beggin1 {
         @include button_responsive(#EB476E);
-    
+
     }
-    
+
     .button_beggin2 {
         @include button_responsive(#07ACE6);
     }
-    
+
     .button_beggin3 {
         @include button_responsive(#55DFB4);
     }
-   
+
 
 }

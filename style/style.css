@@ -580,7 +580,7 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 4% 6% 5px;
+  padding: 4% 6% 20px;
   border-radius: 18px;
   box-sizing: border-box;
   cursor: pointer;
@@ -597,7 +597,7 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 4% 6% 5px;
+  padding: 4% 6% 20px;
   border-radius: 18px;
   box-sizing: border-box;
   cursor: pointer;
@@ -614,7 +614,7 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 4% 6% 5px;
+  padding: 4% 6% 20px;
   border-radius: 18px;
   box-sizing: border-box;
   cursor: pointer;
@@ -631,7 +631,7 @@ body {
   background-color: #EB476E;
   border-radius: 23px;
   width: 51%;
-  height: 9%;
+  height: 11%;
   position: absolute;
   top: 96%;
   padding: 5%;
@@ -645,7 +645,7 @@ body {
   background-color: #07ACE6;
   border-radius: 23px;
   width: 51%;
-  height: 9%;
+  height: 11%;
   position: absolute;
   top: 96%;
   padding: 5%;
@@ -659,7 +659,7 @@ body {
   background-color: #55DFB4;
   border-radius: 23px;
   width: 51%;
-  height: 9%;
+  height: 11%;
   position: absolute;
   top: 96%;
   padding: 5%;
@@ -724,8 +724,6 @@ body {
     display: flex;
     position: absolute;
     left: 35%;
-    border: none;
-    font-size: 1rem;
     justify-content: center;
     align-items: center;
   }
@@ -737,8 +735,6 @@ body {
     display: flex;
     position: absolute;
     left: 35%;
-    border: none;
-    font-size: 1rem;
     justify-content: center;
     align-items: center;
   }
@@ -750,53 +746,48 @@ body {
     display: flex;
     position: absolute;
     left: 35%;
-    border: none;
-    font-size: 1rem;
     justify-content: center;
     align-items: center;
   }
 }
-@media only screen and (max-width: 1000px) {
-  .contact {
-    display: flex;
-    flex-flow: column;
-  }
-  .contact .contact-container {
-    min-width: 50%;
-  }
-  .contact .contact-1 {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 31px;
-    line-height: 58px;
-    color: var(--black-color);
-    text-align: center;
-  }
-  .contact .contact-2 {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--black-color);
-    text-align: center;
-  }
-  .contact .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 38px;
-    margin-left: 32px;
-  }
-  .contact .p_email {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    color: #A5A5A5;
-  }
+.contact {
+  display: flex;
+  flex-flow: column;
 }
+.contact .contact-container {
+  min-width: 50%;
+}
+.contact .contact-1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 58px;
+  color: var(--black-color);
+}
+.contact .contact-2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--black-color);
+}
+.contact .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 38px;
+  margin-right: 8px;
+}
+.contact .p_email {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #A5A5A5;
+}
+
 @media only screen and (min-width: 1000px) {
   .contact {
     display: flex;
@@ -817,6 +808,13 @@ body {
   .checkbox-container {
     margin-left: -9%;
     margin-bottom: -8%;
+  }
+  .contact-name {
+    padding-top: 11%;
+  }
+  .btn-submit {
+    width: 200px;
+    height: 40px;
   }
 }
 .contact-name {
@@ -911,7 +909,8 @@ input.invalid {
   border-color: #FF0000;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   background-color: lightyellow;
 }
 
