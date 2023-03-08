@@ -85,6 +85,24 @@
     }
 }
 
+@media only screen and (max-width: 999px) {
+        .contact-1{
+            display: flex;
+            justify-content: center;
+        }
+        .contact-2{
+            display: flex;
+            justify-content: center;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-type{
+            display: flex;
+            flex-direction: row;
+        }
+}
 
 .contact-name {
     font-family: 'Open Sans';

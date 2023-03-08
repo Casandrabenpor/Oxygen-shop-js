@@ -33,7 +33,6 @@ header {
 
     display: flex;
     justify-content: space-around;
-
     width: 30%;
 }
 
@@ -51,7 +50,7 @@ header {
 
 
 @media screen and (max-width: 1000px) {
-   
+
 
     .burger {
         display: block;
@@ -104,6 +103,11 @@ header {
     }
 
 
+    .nav-link:hover {
+        border-color: none;
+    }
+
+
 }
 
 .fa-solid,
@@ -125,20 +129,12 @@ header {
     text-transform: uppercase;
     vertical-align: top;
     text-decoration: none;
-}
+ }
 
 .nav-link:hover {
-    opacity: 1;
-    text-decoration: underline;
-    -webkit-text-decoration-color: #08A6E4;
-    text-decoration-color: #08A6E4;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 28px;
-    transition: -webkit-text-decoration 1s ease-in;
-    transition: text-decoration 1s ease-in;
-    transition: text-decoration 1s ease-in, -webkit-text-decoration 1s ease-in;
-    transition: opacity 0.4s ease-in;
     cursor: pointer;
+    border-bottom: 4px solid #08A6E4;
+
 }
 
 // Modal popup

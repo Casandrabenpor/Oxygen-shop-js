@@ -9,10 +9,11 @@
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
-        font-size: 35px;
-        line-height: 41px;
+        font-size: 49px;
+        line-height: 57px;
         text-align: center;
-        padding-top: 15%;
+        padding-top: 8%;
+
     }
 
     h4 {
@@ -20,8 +21,9 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 23px;
+        line-height: 22px;
         text-align: center;
+        padding-top: 2%;
         color: var(--black-color);
     }
 
@@ -68,9 +70,10 @@
     }
 
     .btn-a {
+        font-family: 'Open Sans';
         color: var(--white-color);
         display: block;
-        width: 310px;
+        width: 440px;
         height: 67px;
         text-align: center;
         margin: 0 auto;
@@ -79,6 +82,9 @@
         border-radius: 40px;
         border: none;
         font-weight: 700;
+        margin-top: 2%;
+
+
     }
 
     button:hover {
@@ -98,17 +104,37 @@
 
 
 // vector
-@media only screen and (min-width: 1000px) {
-     .shop h1 {
-        color: var(--black-color);
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 35px;
-        line-height: 41px;
-        text-align: center;
-        padding-top: 15%;
+@media only screen and (max-width: 1000px) {
+    .shop {
+        h1 {
+            color: var(--black-color);
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 41px;
+            text-align: center;
+            padding-top: 35%;
+
+        }
+
+        .btn-a {
+            height: 67px;
+            width: 310px;
+            border-radius: 40px;
+        }
+
+        h2 {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 35px;
+            color: var(--black-color);
+        }
     }
+
+
 
     .popular_vector {
         margin-top: 50px;

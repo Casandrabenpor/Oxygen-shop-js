@@ -8,9 +8,8 @@ body {
 
 .content {
     background: #F7F7F7;
-    // margin-top: 15%;
     width: 80%;
-    margin: 0 auto;
+     margin: 0 auto;
 }
 
 #benefit_background {
@@ -20,35 +19,59 @@ body {
 
 //Card textos
 
-@media only screen and (min-width: 1000px) {
 
-    //card Styles
-    .card-text {
+//card Styles
+.card-text {
+    color: --var(--black-color);
+    font-family: "Open Sans";
+    padding-bottom: 5%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 
-        text-align: left;
-        color: --var(--black-color);
-        font-family: "Open Sans";
-        margin-right: 5%;
+}
 
-        // line-height: 22px;
+.card-title {
 
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    padding-bottom: 5%;
+    line-height: 42px;
 
-    }
-
-    .card-title {
-
-        font-family: "Raleway";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        color: #000000;
-        margin-top: 10%;
-
-    }
+}
+.card-title-3 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-top: 13%;
+    width: 420px;
+    height: 87px;
 
 
 }
+
+
+.card-text-3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 7%;
+
+
+}
+
+
+
 
 //Card 1
 .card1-img {
@@ -166,6 +189,56 @@ body {
 // Media screen 
 
 @media screen and (max-width: 1000px) {
+    
+    .card-title {
+
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+        color: #000000;
+        margin-top: 5%;
+    }
+
+    .card-text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 14%;
+
+    }
+
+    .card-title-3 {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+        color: #000000;
+        margin-top: 5%;
+        margin-left: 5%;
+        width: auto;
+        height: auto;
+
+    }
+
+
+    .card-text-3 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        margin-top: 14%;
+        margin-left: 5%;
+     
+
+    }
+
+  
     .card1-img {
         display: flex;
         flex-direction: column;
@@ -220,6 +293,28 @@ body {
         left: 19%;
     }
 
+    @mixin card-line($border, $margin-left:0) {
+        width: 70%;
+        border: $border;
+        margin-left: $margin-left;
+        opacity: 1;
+       
+    
+    }
+    
+    .card-line1 {
+        @include card-line(1px solid #FB3B64);
+    }
+    
+    .card-line2 {
+        @include card-line(1px solid #08A6E4);
+    }
+    
+    .card-line3 {
+        @include card-line(1px solid #55DFB4, 5%);
+    
+    }
+
 }
 
 // Line
@@ -227,6 +322,7 @@ body {
     width: 70%;
     border: $border;
     opacity: 1;
+   
 
 }
 

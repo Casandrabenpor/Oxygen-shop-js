@@ -1,5 +1,14 @@
 //Pricing
 
+.title_pricing {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    padding-top: 5%;
+}
+
 // Botones eur,usd,gbp
 .pricing_eur {
     display: flex;
@@ -35,90 +44,94 @@
     border: 1px solid var(--blue-color-btn2)
 }
 
-@media only screen and (min-width: 1000px) {
-    #price_content {
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-evenly;
 
-        .p_btn-beggin {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 18px;
-            color: #FFFF;
-        }
+#price_content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
 
-        .basic_title {
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 24px;
-            color: #13253B;
-            text-align: center;
-        }
+    .p_btn-beggin {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        color: #FFFF;
+    }
 
-        .title-dolar1 {
-            color: #FB3B64;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 46px;
-            line-height: 64px;
-            text-align: center;
+    .basic_title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #13253B;
+        text-align: center;
+    }
 
-        }
-
-        .title-dolar2 {
-            color: #07ACE6;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 46px;
-            line-height: 64px;
-            text-align: center;
-
-        }
-
-        .title-dolar3 {
-            color: #55DFB4;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 46px;
-            line-height: 64px;
-            text-align: center;
-        }
-
-        .small {
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 14px;
-            color: #13253B;
-            text-align: center;
-        }
-
-        .card__atr {
-            display: flex;
-            // margin: 10px 0px;
-
-        }
-
-        .card_text {
-            margin-left: 10px;
-            margin-top: 17px;
-
-        }
+    .title-dolar1 {
+        color: #FB3B64;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 64px;
+        text-align: center;
 
     }
+
+    .title-dolar2 {
+        color: #07ACE6;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 64px;
+        text-align: center;
+
+    }
+
+    .title-dolar3 {
+        color: #55DFB4;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 64px;
+        text-align: center;
+    }
+
+    .small {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #13253B;
+        text-align: center;
+    }
+
+    .card__atr {
+        display: flex;
+
+    }
+
+    .card_text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 10px;
+        margin-top: 17px;
+
+    }
+
 }
 
 
-@mixin card($bordercolor, $box-shadow) {
+
+@mixin card($bordercolor) {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -127,14 +140,13 @@
     box-sizing: border-box;
     cursor: pointer;
     border: $bordercolor;
-
-    box-shadow: $box-shadow;
     margin-bottom: 10%;
 
 
 
 
     &:hover {
+
         transform: scale(1.08);
         transition: transform 0.5s ease-in-out;
     }
@@ -142,18 +154,31 @@
 
 
 #card_price1 {
-    @include card(1px solid var(--pink-color), 5px 10px 27px #fb3b64);
+    @include card(1px solid var(--pink-color));
 
 }
 
 #card_price2 {
-    @include card(1px solid var(--blue-color-btn), 5px 10px 27px #07ACE6);
+    @include card(1px solid var(--blue-color-btn));
 
 }
 
 #card_price3 {
-    @include card(1px solid var(--blue-color-btn2), 5px 10px 27px #55DFB4);
+    @include card(1px solid var(--blue-color-btn2));
 }
+
+.card1:hover {
+    box-shadow: 5px 10px 27px var(--pink-color);
+}
+
+.card2:hover {
+    box-shadow: 5px 10px 27px var(--blue-color-btn);
+}
+
+.card3:hover {
+    box-shadow: 5px 10px 27px var(--blue-color-btn2);
+}
+
 
 @mixin button($background-color) {
     background-color: $background-color;
@@ -191,13 +216,33 @@
         display: flex;
         flex-direction: column;
         width: 95%;
+
+        .card_text {
+
+            margin-left: 0%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .card__atr {
+            display: flex;
+
+        }
+
+    }
+
+    .price_cards {
+        display: flex;
+        justify-content: center;
+        margin-right: 2%;
+        margin-left: 2%;
     }
 
     .features {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
 
     }
 
@@ -209,15 +254,26 @@
         line-height: 18px;
         color: #FFFF;
     }
+    .basic_title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #13253B;
+        text-align: center;
+     
+    }
 
     .title-dolar1 {
         color: #FB3B64;
+        text-align: center;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 300;
         font-size: 46px;
-        line-height: 64px;
-        text-align: center;
+        line-height: 62px;
+
 
     }
 
@@ -227,7 +283,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 46px;
-        line-height: 64px;
+        line-height: 62px;
         text-align: center;
 
     }
@@ -238,32 +294,11 @@
         font-style: normal;
         font-weight: 300;
         font-size: 46px;
-        line-height: 64px;
+        line-height: 62px;
         text-align: center;
     }
 
-    @mixin card($bordercolor, $box-shadow) {
-        display: flex;
 
-        flex-direction: column;
-        padding: 4% 6% 5px;
-        border-radius: 18px;
-        box-sizing: border-box;
-        cursor: pointer;
-        border: $bordercolor;
-        width: 80%;
-        height: 339px;
-        box-shadow: $box-shadow;
-        margin-bottom: 10%;
-        margin-top: 10%;
-
-
-
-        &:hover {
-            transform: scale(1.08);
-            transition: transform 0.5s ease-in-out;
-        }
-    }
 
     @mixin button_responsive($background-color) {
         background-color: $background-color;
@@ -291,6 +326,38 @@
 
     .button_beggin3 {
         @include button_responsive(#55DFB4);
+    }
+
+    @mixin card_mobile($bordercolor) {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 4% 6% 20px;
+        border-radius: 18px;
+        box-sizing: border-box;
+        cursor: pointer;
+        border: $bordercolor;
+        padding: 20% 0% 20% 0%;
+        margin-bottom: 10%;
+
+        &:hover {
+            transform: scale(1.08);
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+
+    #card_price1 {
+        @include card_mobile(1px solid var(--pink-color));
+
+    }
+
+    #card_price2 {
+        @include card_mobile(1px solid var(--blue-color-btn));
+
+    }
+
+    #card_price3 {
+        @include card_mobile(1px solid var(--blue-color-btn2));
     }
 
 
