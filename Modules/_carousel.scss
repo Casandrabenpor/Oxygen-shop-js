@@ -1,7 +1,5 @@
-//Carousel
-.carousel {
-
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+@media screen and (max-width: 1000px) {
+    #carouselExampleControls {
+        width: 100% !important;
+    }
 }

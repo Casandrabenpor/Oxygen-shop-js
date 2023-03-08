@@ -257,58 +257,35 @@
     </section>
 
     <!--Carousel-->
-    <div id="carousel">
-        <div id="carouselExampleIndicators" class="carousel slide w-50 h-50" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                    aria-label="Slide 7"></button>
-            </div>
+    <section id="carousel" class="d-flex justify-content-center">
+        <div id="carouselExampleControls" class="carousel slide p-3 w-75" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/slider/1.jpg" class="d-block w-100" alt="Imagen Carrousel 1" />
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/slider/2.jpg" class="d-block w-100" alt="Imagen Carrousel 2" />
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/slider/5.jpg" class="d-block w-100" alt="Imagen Carrousel 5" />
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/slider/6.jpg" class="d-block w-100" alt="Imagen Carrousel 6" />
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/slider/7.jpg" class="d-block w-100" alt="Imagen Carrousel 7" />
-                </div>
+              <div class="carousel-item active">
+                <img src="assets/slider/3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/slider/2.jpg" class="d-block w-100" alt="...">
+              </div>
+              
+              <div class="carousel-item">
+                <img src="assets/slider/6.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
             </button>
-        </div>
-    </div>
+          </div>
 
+    </section>
     <!-- Contact -->
     <section>
         <div class="contact">
-            <div class=" contact-text" id="contact">
+            <div id="contact">
                 <h2 class="contact-1">Any questions?</h2>
                 <p class="contact-2">Leave your email address or call us!</p>
                 <div class="flex-container">
@@ -373,7 +350,7 @@
                 <img src="assets/icons/mail.png" class="mailModal" alt="mail" />
                 <img src="assets/icons/arrowModal.png" id="cancel" alt="arrow" />
                 <h3>Subscribe to our newsletter</h3>
-                <div>
+                <div id="popModal">
                     <label class="contact-email" for="mail">EMAIL</label>
                     <input type="text" id="mailPopup" class="mail" name="mail" required />
                     <span class="error" aria-live="polite"></span>

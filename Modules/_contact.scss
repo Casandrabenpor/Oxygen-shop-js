@@ -1,52 +1,44 @@
 @use '../Modules/color';
 
 //Contact
+//Aplica a todos los dispositivos
+.contact-1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 58px;
+    color: var(--black-color);
 
-.contact {
-    display: flex;
-    flex-flow: column;
-
-    .contact-container {
-        min-width: 50%;
-    }
-
-    .contact-1 {
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 49px;
-        line-height: 58px;
-        color: var(--black-color);
-
-    }
-
-    .contact-2 {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        color: var(--black-color);
-
-    }
-
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 38px;
-        margin-right: 8px;
-    }
-
-    .p_email {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        color: #A5A5A5;
-    }
 }
 
+.contact-2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--black-color);
+
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 38px;
+    margin-right: 8px;
+}
+
+.p_email {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A5A5A5;
+}
+
+//Aqui solo aplica a los dispositivos de escritorio
 @media only screen and (min-width: 1000px) {
 
     .contact {
@@ -85,16 +77,15 @@
     }
 }
 
+// Aplica a dispositivos móviles
 @media only screen and (max-width: 1000px) {
     .contact {
         .contact-1 {
-            font-family: 'Raleway';
-            font-style: normal;
             font-weight: 400;
             font-size: 40px !important;
             line-height: 47px !important;
-            display: flex;
-            justify-content: center;
+            margin-left: 30px;
+
         }
 
         .contact-2 {
@@ -103,14 +94,8 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 22px;
-            display: flex;
-            justify-content: center;
-        }
+            margin-left: 30px;
 
-        .flex-container {
-            display: flex;
-            flex-direction: column;
-            margin-left: 5%;
         }
 
         #form_contact {
@@ -118,8 +103,9 @@
         }
 
         .contact-type {
-            display: flex;
-            flex-direction: row;
+            margin-left: 30px;
+            width: 100%;
+            height: 100%;
         }
     }
 }
@@ -208,10 +194,11 @@
 
 .arrowbutton {
     position: relative;
-    left: 20%;
+    left: 100%;
     top: 71%;
     cursor: pointer;
     right: 8%;
+    height: 50px;
 }
 
 

@@ -140,7 +140,10 @@ header {
 // Modal popup
 
 #favDialog {
-    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    background: gray;
+}
+#popModal{
+    text-align: center;
 }
 
 .mailModal {
@@ -155,6 +158,10 @@ header {
     right: 9%;
 
 
+}
+input.mail {
+    border: none !important;
+    border-bottom: 1px solid #95989A !important;
 }
 
 #submitModal {
