@@ -50,7 +50,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .burger {
     display: block;
   }
@@ -94,7 +94,7 @@ header {
     top: 8%;
   }
   .nav-link:hover {
-    border-color: none;
+    border: none !important;
   }
 }
 .fa-solid,
