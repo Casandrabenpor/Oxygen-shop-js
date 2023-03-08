@@ -896,7 +896,7 @@ body {
     cursor: pointer;
     border: 1px solid var(--pink-color);
     padding: 20% 0% 20% 0%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
   #card_price1:hover {
     transform: scale(1.08);
@@ -912,7 +912,7 @@ body {
     cursor: pointer;
     border: 1px solid var(--blue-color-btn);
     padding: 20% 0% 20% 0%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
   #card_price2:hover {
     transform: scale(1.08);
@@ -928,7 +928,7 @@ body {
     cursor: pointer;
     border: 1px solid var(--blue-color-btn2);
     padding: 20% 0% 20% 0%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
   #card_price3:hover {
     transform: scale(1.08);
@@ -946,7 +946,7 @@ body {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 31px;
+  font-size: 49px;
   line-height: 58px;
   color: var(--black-color);
 }
@@ -1002,20 +1002,34 @@ body {
     height: 40px;
   }
 }
-@media only screen and (max-width: 999px) {
-  .contact-1 {
+@media only screen and (max-width: 1000px) {
+  .contact .contact-1 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px !important;
+    line-height: 47px !important;
     display: flex;
     justify-content: center;
   }
-  .contact-2 {
+  .contact .contact-2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
     display: flex;
     justify-content: center;
   }
-  .flex-container {
+  .contact .flex-container {
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
   }
-  .contact-type {
+  .contact #form_contact {
+    margin-left: 5%;
+  }
+  .contact .contact-type {
     display: flex;
     flex-direction: row;
   }
@@ -1058,6 +1072,7 @@ body {
   border-radius: 35px;
   border: none;
   margin-bottom: 15%;
+  margin-left: 35%;
 }
 
 .btn-send {
@@ -1097,7 +1112,7 @@ body {
 
 .arrowbutton {
   position: relative;
-  left: 90%;
+  left: 20%;
   top: 71%;
   cursor: pointer;
   right: 8%;

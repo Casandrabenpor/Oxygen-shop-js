@@ -231,6 +231,7 @@
 
     }
 
+
     .price_cards {
         display: flex;
         justify-content: center;
@@ -338,7 +339,7 @@
         cursor: pointer;
         border: $bordercolor;
         padding: 20% 0% 20% 0%;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
 
         &:hover {
             transform: scale(1.08);

@@ -14,7 +14,7 @@
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
-        font-size: 31px;
+        font-size: 49px;
         line-height: 58px;
         color: var(--black-color);
 
@@ -85,23 +85,43 @@
     }
 }
 
-@media only screen and (max-width: 999px) {
-        .contact-1{
+@media only screen and (max-width: 1000px) {
+    .contact {
+        .contact-1 {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px !important;
+            line-height: 47px !important;
             display: flex;
             justify-content: center;
         }
-        .contact-2{
+
+        .contact-2 {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
             display: flex;
             justify-content: center;
         }
-        .flex-container{
+
+        .flex-container {
             display: flex;
             flex-direction: column;
+            margin-left: 5%;
         }
-        .contact-type{
+
+        #form_contact {
+            margin-left: 5%;
+        }
+
+        .contact-type {
             display: flex;
             flex-direction: row;
         }
+    }
 }
 
 .contact-name {
@@ -145,6 +165,7 @@
     border-radius: 35px;
     border: none;
     margin-bottom: 15%;
+    margin-left: 35%;
 }
 
 .btn-send {
@@ -187,7 +208,7 @@
 
 .arrowbutton {
     position: relative;
-    left: 90%;
+    left: 20%;
     top: 71%;
     cursor: pointer;
     right: 8%;
@@ -211,10 +232,6 @@ input.invalid {
     border-color: #FF0000;
 }
 
-// input.valid{
-//     border-color: rgb(0, 0, 0);
-
-// }
 input:focus,
 textarea:focus {
     background-color: lightyellow;
