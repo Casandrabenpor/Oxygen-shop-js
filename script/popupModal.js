@@ -9,7 +9,7 @@ setTimeout(function () {
     favDialog.showModal();
     storage.setItem("visit", true);
   }
-}, 1000);
+}, 5000);
 
 // El botón de cancelar formulario cierra el cuadro de diálogo
 cancelButton.addEventListener('click', function () {
