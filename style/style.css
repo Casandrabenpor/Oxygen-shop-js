@@ -121,14 +121,14 @@ header {
 }
 
 #favDialog {
-  background: linear-gradient(to right, #fcc1f7, #88f9fd);
+  background: linear-gradient(to right, #ffd2fb, #a9f9fc);
   transition: background 0.2s ease-out;
   cursor: pointer;
   border: 1px solid var(--white-color);
 }
 
 #favDialog:hover {
-  background: linear-gradient(to right, #88f9fd, #fcc1f7);
+  background: linear-gradient(to right, #a9f9fc, #ffd2fb);
 }
 
 #popModal {
@@ -137,7 +137,7 @@ header {
 
 .title_popup {
   font-family: "Raleway";
-  color: var(--blue-color);
+  color: var(--black-color);
 }
 
 .mailModal {
