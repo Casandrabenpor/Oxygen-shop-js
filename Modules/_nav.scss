@@ -140,15 +140,24 @@ header {
 // Modal popup
 
 #favDialog {
-    background: gray;
+    background: linear-gradient(to right, #fcc1f7, #88f9fd);
+    transition: background 0.2s ease-out;
+    cursor: pointer;
+    border: 1px solid var(--white-color);
+}
+#favDialog:hover {
+    background: linear-gradient(to right, #88f9fd, #fcc1f7);
 }
 #popModal{
     text-align: center;
 }
-
+.title_popup{
+    font-family: 'Raleway';
+    color: var(--blue-color);
+}
 .mailModal {
     text-align: center;
-    margin-left: 40%;
+    margin-left: 43%;
 }
 
 #cancel {

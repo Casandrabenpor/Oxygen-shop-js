@@ -121,16 +121,28 @@ header {
 }
 
 #favDialog {
-  background: gray;
+  background: linear-gradient(to right, #fcc1f7, #88f9fd);
+  transition: background 0.2s ease-out;
+  cursor: pointer;
+  border: 1px solid var(--white-color);
+}
+
+#favDialog:hover {
+  background: linear-gradient(to right, #88f9fd, #fcc1f7);
 }
 
 #popModal {
   text-align: center;
 }
 
+.title_popup {
+  font-family: "Raleway";
+  color: var(--blue-color);
+}
+
 .mailModal {
   text-align: center;
-  margin-left: 40%;
+  margin-left: 43%;
 }
 
 #cancel {
@@ -228,12 +240,6 @@ input.mail {
   cursor: pointer;
   opacity: 0.9;
 }
-.shop .option {
-  display: flex;
-  justify-content: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
 
 @media only screen and (max-width: 1000px) {
   .shop h1 {
@@ -300,10 +306,6 @@ input.mail {
   position: relative;
   left: 4%;
   bottom: 34%;
-}
-
-.top {
-  margin-top: 5%;
 }
 
 body {

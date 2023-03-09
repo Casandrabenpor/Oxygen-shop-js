@@ -92,14 +92,6 @@
         opacity: 0.9;
 
     }
-
-    .option {
-        display: flex;
-        justify-content: center;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-
 }
 
 
@@ -182,9 +174,4 @@
 
 .vector3 {
     @include vector(34%);
-}
-
-
-.top {
-    margin-top: 5%;
 }

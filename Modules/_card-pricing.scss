@@ -255,6 +255,7 @@
         line-height: 18px;
         color: #FFFF;
     }
+
     .basic_title {
         font-family: 'Raleway';
         font-style: normal;
@@ -263,7 +264,7 @@
         line-height: 24px;
         color: #13253B;
         text-align: center;
-     
+
     }
 
     .title-dolar1 {
@@ -303,8 +304,6 @@
 
     @mixin button_responsive($background-color) {
         background-color: $background-color;
-
-
         border-radius: 23px;
         width: 29%;
         height: 5%;
@@ -360,6 +359,4 @@
     #card_price3 {
         @include card_mobile(1px solid var(--blue-color-btn2));
     }
-
-
 }
