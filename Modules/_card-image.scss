@@ -75,13 +75,10 @@ body {
     background-color: var(--white-color);
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
     align-items: center;
     border: 1px solid #E8E9ED;
     height: 25em;
     position: relative;
-    width: 100%;
-    min-width: 30vw;
     border-radius: 5px;
    
 }
@@ -117,12 +114,9 @@ body {
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     border: 1px solid #E8E9ED;
     height: 25em;
-    width: 100%;
-    min-width: 30vw;
     border-radius: 5px;
     margin-top: 40px;
 }
@@ -242,7 +236,7 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 71vh;
+        height: 74vh;
     }
 
     .card_description {
