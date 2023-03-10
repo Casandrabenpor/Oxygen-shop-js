@@ -124,7 +124,7 @@
         }
     }
 
-
+}
 
     .popular_vector {
         margin-top: 50px;
@@ -139,6 +139,8 @@
         line-height: 24px;
         text-align: center;
         letter-spacing: 5.96px;
+      
+
         color: var(--black-color);
 
     }
@@ -154,7 +156,7 @@
         margin-top: 10px;
 
     }
-}
+
 
 @mixin vector($bottom) {
     position: relative;

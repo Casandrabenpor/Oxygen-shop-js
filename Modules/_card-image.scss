@@ -64,7 +64,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    margin-top: 22px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 
@@ -95,11 +96,12 @@ body {
 
 .macbook-image {
     position: relative;
-    width: 60%;
-    top: 2em;
-    left: 20%;
+    margin: auto;
+    width: 53%;
+    top: 3em;
+    left: 2%;
     z-index: 1;
-
+  
 }
 
 .rectangle {
@@ -129,9 +131,10 @@ body {
 
 .iphone {
     position: relative;
-    width: 74%;
+    margin: auto;
+    width: 55%;
     top: 1em;
-    left: 7%;
+    right: 14%;
     z-index: 1;
 }
 
@@ -141,25 +144,27 @@ body {
     background: #FFFFFF;
     border-radius: 5px;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row-reverse;
     background-color: transparent;
     display: flex;
-    gap: 4rem;
     margin-top: 40px;
     border: 0;
+    gap: 2rem;
 }
 
 .frame {
-    display: flex;
-    flex-wrap: wrap;
-    width: 24.5vw;
-    position: relative;
+    // display: flex;
+    // flex-wrap: wrap;
+    height: 100%;
+    // position: relative;
+    // margin: auto;
 
 }
 
 .card_description_3 {
     padding-left: 2%;
+    width: 70%;
     background-color: var(--white-color);
 }
 
@@ -248,11 +253,15 @@ body {
         flex-direction: column-reverse;
         background-color: transparent;
         align-items: center;
-
     }
+    .card_description_3{
+        width: 100%;
+    }
+
 
     .frame {
         width: 100%;
+        height: auto;
     }
 
     .rectangle {
@@ -265,7 +274,7 @@ body {
 
     .ellipse_iphone {
         position: absolute;
-        width: 60%;
+        width: 55%;
         left: 9%;
     }
 
@@ -274,8 +283,6 @@ body {
         border: $border;
         margin-left: $margin-left;
         opacity: 1;
-
-
     }
 
     .card-line1 {
@@ -294,8 +301,8 @@ body {
 }
 
 // Line
-@mixin card-line($border) {
-    width: 70%;
+@mixin card-line($border,$width) {
+    width: $width;
     border: $border;
     opacity: 1;
 
@@ -303,14 +310,14 @@ body {
 }
 
 .card-line1 {
-    @include card-line(1px solid #FB3B64);
+    @include card-line(2px solid #FB3B64,70%);
 }
 
 .card-line2 {
-    @include card-line(1px solid #08A6E4);
+    @include card-line(2px solid #08A6E4,70%);
 }
 
 .card-line3 {
-    @include card-line(1px solid #55DFB4);
+    @include card-line(2px solid #55DFB4,50%);
 
 }
