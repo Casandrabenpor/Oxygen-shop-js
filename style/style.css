@@ -435,7 +435,6 @@ body {
 .card3-img {
   background: #FFFFFF;
   border-radius: 5px;
-  flex-direction: column;
   justify-content: space-between;
   flex-direction: row-reverse;
   background-color: transparent;
@@ -980,6 +979,7 @@ body {
     gap: 5em;
     flex-direction: row;
     justify-content: center;
+    margin-top: 25px;
   }
   #form-contact {
     display: flex;
