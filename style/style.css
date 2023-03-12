@@ -1105,10 +1105,8 @@ body {
 
 .arrowbutton {
   position: relative;
-  left: 100%;
-  top: 71%;
+  left: 29%;
   cursor: pointer;
-  right: 8%;
   height: 50px;
 }
 
