@@ -92,6 +92,53 @@
     }
 }
 
+//animation
+.heartbeat {
+    /* Estilos iniciales sin animación */
+    transform: scale(1);
+    transform-origin: center center;
+    animation: none;
+    /* Evita que la animación se reproduzca automáticamente */
+
+    /* Aplica la animación al pasar el mouse */
+    transition: transform 0.3s ease-in-out;
+}
+
+.heartbeat:hover {
+    /* Establece los estilos de animación al pasar el mouse */
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@keyframes heartbeat {
+
+    /* Definición de la animación */
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
 
 // vector
 @media only screen and (max-width: 1000px) {
@@ -126,36 +173,36 @@
 
 }
 
-    .popular_vector {
-        margin-top: 50px;
-        padding-bottom: 5%;
-    }
+.popular_vector {
+    margin-top: 50px;
+    padding-bottom: 5%;
+}
 
-    .numbers {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 24px;
-        text-align: center;
-        letter-spacing: 5.96px;
-      
+.numbers {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 5.96px;
 
-        color: var(--black-color);
 
-    }
+    color: var(--black-color);
 
-    .phrase {
-        font-family: '' Raleway'';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 20px;
-        text-align: center;
-        color: var(--gray-color);
-        margin-top: 10px;
+}
 
-    }
+.phrase {
+    font-family: '' Raleway'';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--gray-color);
+    margin-top: 10px;
+
+}
 
 
 @mixin vector($bottom) {
